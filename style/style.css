@@ -1,0 +1,534 @@
+*{
+	margin:0; padding: 0;
+}
+body{
+	font-family: Calibri;
+	font-size: 14px;
+	background: white;
+}
+input{
+	outline: none;
+}
+.logo__ptit{
+	width: 3.75vw;
+    margin: 1.25vw auto 0.703vw auto;
+}
+.formlogin__title{
+	font-size:18px;
+}
+#formlogin form table tr{
+	flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+#formlogin form table tr:nth-child(2){
+	margin-top:15px;
+}
+#formlogin form table{
+	width:100%;
+	margin-top:20px
+}
+textarea{
+	width: 200px;
+	background-color: #ffffff7a;
+	border: none;
+	border-radius: 2px;
+	
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+button{
+	width: 70px;
+	height: 25px;
+	border: none;
+	border-radius: 5px;
+	background: #3fb13a;
+	color: white;
+	cursor: pointer;
+}
+button:hover{
+	background:#17af04;
+}
+.container{
+}
+.container__form {
+	position:relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background:#F6F8FA
+}
+.container__form::before{
+	content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 42.5%;
+    height: 434px;
+    background: url(../image/bg_right.png) no-repeat center;
+    background-size: contain;
+}
+.container__form::after{
+	content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 42.5%;
+    height: 434px;
+    background: url(../image/bg_left.png) no-repeat center;
+    background-size: contain;
+}
+/*HEADER*/
+header{
+	padding: 5px 20px;
+    height: 40px;
+    background: #bb2019;
+    color: white;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+	float:left;
+	width: 50%;
+	font-size: 20px;
+}
+#logo a{
+	float:left;
+	font-family:monospace;
+	transition: 0.2s linear;
+}
+
+#logoImg{
+	float: left;
+	margin-right: 20px;
+}
+
+#accountName{
+	float:right;
+}
+#accountName p{
+	float:left; 
+	margin-right: 10px;
+	margin-top: 5px;
+} 
+#accountName a:hover{
+	filter: brightness(1.5);
+}
+
+/*MAIN-contain*/
+
+#menu{
+	float: left;
+	color: black;
+	background: #fff;
+	width: 200px;
+	height: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 0.521vw 0 rgb(44 44 44 / 20%);
+
+}
+#menu ul{
+	list-style-type: none;
+}
+#menu ul li{
+	height: 50px;
+	line-height: 50px;
+	border-bottom:1px solid #e8e9e9;
+}
+.container.container__home {
+    display: flex;
+    justify-content: space-between;
+    height: 857px;
+}
+#menu ul li a{
+	display: block;
+	text-decoration: none; 
+	color: #000;
+	padding-left: 20px;
+	transition: 0.2s ease-in;
+
+}
+#menu ul li a:hover, #current{
+	background: rgb(200 199 204 / 50%);
+}
+#menu i{
+	margin-right: 15px;
+}
+#main-contain{
+	flex: 1;
+    box-sizing: border-box;
+	padding: 20px 50px
+}
+#cthome{
+	flex: 1;
+    float: right;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+
+}
+#cthome a{
+	background:  #58cb0aa1;
+	font-size: 10px;
+	border-radius: 50%;
+	padding: 1em;
+	color: #ffffff;
+	margin: 0px 10px;
+	display: inline-block;
+	transition: 0.2s ease-out;
+}
+#cthome a:hover{
+	background: #ff5900;
+	transform: scale(1.5);
+}
+#cthome marquee{
+	float:left;
+	margin-left:85px; 
+	padding: 2px;
+	color: red;
+	border-right:none;
+	box-shadow: 0px 0px 1px red;
+	width: 75%;
+	margin-top: 1px;
+
+}
+#cthome span{
+	float: left;
+	background:#ff0000bd;
+	padding: 3px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+#main-contain h2{
+	color: #000;
+	padding:5px;
+	text-align: start;
+}
+#listSV{
+	margin: 10px 0;
+}
+#listSV table{
+	margin: 0 auto;
+	width: 100%;
+	
+}
+b{
+	color: black;
+}
+#listSV th{
+	height: 30px;
+	background: #bb2019;
+	color: white;
+}
+#listSV tr{
+	height: 20px;
+	background-color: #f1f1f1;
+}
+#listSV tr:hover,#listSV tr:nth-child(even):hover{
+	transition: 0.1s ease-in;
+	background-color:rgb(223, 221, 221);
+}
+#listSV td{
+	padding-left: 5px;
+}
+#listSV tr:nth-child(even){
+    background-color: #f1f1f1;
+}
+.hihi{
+    margin-bottom: 20px;
+}
+.form {
+	
+	width: 500px;
+	font-size: 16px;
+	color: black;
+}
+.form table{
+	width: 100%;
+	border: 4px solid #ffffff;
+	padding: 20px;
+	border-style: dashed;
+	border-radius: 0px 20px 0px 20px;
+}
+.form input {
+	width: 96.5%;
+	padding: 7px;
+	border-radius: 4px;
+	border: none;
+}
+.form select{
+	width: 100%!important;
+	padding: 7px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+}
+#main-contain form tr {
+    display: flex;
+    flex-direction: column;
+}
+#main-contain form tr td{
+    margin-bottom: 5px;
+}
+#formChucnang{
+	
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-right: 20px;
+}
+#formChucnang input {
+	font-size: 12px;
+	border: none;
+	padding: 1em;
+	cursor: pointer;
+	margin: 5px;
+	border-radius: 5px;
+	color:white;
+	transition: 0.1s linear;
+}
+
+#btnThemSV{
+	background:#53b10b!important;
+
+}
+
+#btnXoa, #btnSua, #btnChitiet{
+	border:none;
+	padding: 3px;
+	border-radius: 3px;
+	color: white;
+	margin: 2px;
+	cursor:pointer;
+	transition: 0.1s ease-in;
+}
+#btnXoa{
+	background: red;
+}
+#btnSua{
+	background: #358fce;
+}
+#btnXoa:hover, #btnSua:hover, #btnChitiet:hover{
+	background: gray;
+}
+#btnChitiet{
+	background: #8603a2;
+}
+#btnChapNhan{
+	border:none;
+	padding: 10px;
+	color: white;
+	background: #3fb13a!important;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor:pointer;
+	width:100%;
+}
+#contact-contain{
+	padding-top: 30px;
+	padding-left:30%;
+
+	font-size: 16px;
+}
+#contact-contain img{
+	float:left;
+	margin-right: 10px;
+}
+.chucnang{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.infGiangvien{
+	background: #f3f3f352;
+    color: #000000;
+    width: 20%;
+    height: 246px;
+    border: 1px solid #d9d8d8;
+    text-align: center;
+    margin: 20px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    float: left;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    z-index: 2;
+}
+.infGiangvien img{
+	border-radius: 50%;
+}
+.infGiangvien a{
+	display: block;
+
+}
+.infGiangvien:hover{
+	
+	transform: scale(1.04);
+	box-shadow: 0px 0px 1px 0px #07070759;
+}
+
+/*login*/
+#formlogin{
+	background: white;
+	width: 300px ;
+	min-height: 250px; 
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+	transition: 0.3s ease-out;
+	border-radius: 5px;
+	box-shadow: 0 0 0.521vw 0 rgb(44 44 44 / 20%);
+}
+
+#formlogin td{
+	font-size: 16px;
+	display:flex;
+}
+#formlogin input{
+	width: 100%;
+    height: 15px;
+    border: solid 0.104vw #d8dee2;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#formlogin #btndangnhap{
+	width: 100%;
+    height: 40px;
+    margin: 30px 0 10px 0;
+    border-radius: 5px;
+    background: #bb2019;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+#thongtin{
+	width:  700px;
+	min-height: 300px;
+	margin: 0 auto;
+	padding-top: 50px;
+
+}
+/* trang thong tin */ 
+#avtGiangvien{
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+
+}
+#avtGiangvien img{
+	border: 1px solid white;
+}
+#avtGiangvien input{
+	border: none;
+	background: #4207aa;
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+}
+#chi_tiet{
+	float: left;
+    margin-left: 30px;
+    width: 300px;
+    height: 200px;
+    color: #000;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.input_file{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.input_file + label {
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 3px;
+    font-weight: 700;
+    color: white;
+    background-color: #04011e73;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.input_file:focus + label,
+.input_file + label:hover {
+    background-color: red;
+}
+/*search -box */
+#f_search{
+	width: 200px;
+	position: relative;
+	margin-bottom: 15px;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	
+}
+#main-contain form{
+	color:#000
+}
+#main-contain form input,
+#main-contain form select{
+	border: 1px solid;
+	background-color:none;
+}
+#main-contain form select{
+	width:216px
+
+}
+#btnChapNhan{
+
+}
+#txtSearch{
+	width:170px;
+	height: 30px;
+	position: relative;
+	border: none!important;
+	border-radius: 5px 0px 0px 5px;
+	padding: 5px;
+	background: #fefefe8a;
+    font-size: 11px;
+}
+
+#btnSearch{
+	background: url(../image/searchicon.png) no-repeat center ;
+	background-size: 60%;
+	position: absolute;
+	top: 0px; 
+	right:0px;
+	border: none;
+	width: 25px;
+	height: 30px;
+	border: 1px solid #ffffff87!important;
+	border-radius:0px 5px 5px 0px;
+	border-left: none;
+	cursor: pointer;
+
+}
+/*FOOTER*/
+
+footer{
+	background: #bb2019;
+	color: #efd5d5;
+	height: 30px;
+	padding: 5px 20px;
+	text-align: right;
+	clear:both;
+	display: flex;
+	align-items:center;
+	justify-content: end;
+}
